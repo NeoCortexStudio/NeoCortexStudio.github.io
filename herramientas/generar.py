@@ -6,7 +6,7 @@ import os, re
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GP = 'https://play.google.com/store/apps/details?id=com.neocortex.simonsi'
 AS = 'https://apps.apple.com/app/id6833710828'
-APP_STORE_LISTA = False   # cambiar a True cuando Simon Sí ya esté publicado en la App Store
+APP_STORE_LISTA = True    # Simon Sí ya está en la App Store (publicado 2026-11-13)
 CORREO = 'soporte.neocortexstudio@gmail.com'
 
 PAGINAS = [
@@ -21,7 +21,7 @@ PAGINAS = [
 def botones_tiendas():
     gp = f'<a class="bt" href="{GP}" target="_blank" rel="noopener">▶ Google Play</a>'
     if APP_STORE_LISTA:
-        a = f'<a class="bt oro" href="{AS}" target="_blank" rel="noopener"> App Store</a>'
+        a = f'<a class="bt oro" href="{AS}" target="_blank" rel="noopener">App Store</a>'
     else:
         a = '<span class="bt gris"><span lang="es">App Store · Próximamente</span><span lang="en">App Store · Coming soon</span></span>'
     return f'<div class="botones">{gp}{a}</div>'
