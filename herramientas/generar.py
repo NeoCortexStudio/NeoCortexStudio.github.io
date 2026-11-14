@@ -21,7 +21,7 @@ PAGINAS = [
 def botones_tiendas():
     gp = f'<a class="bt" href="{GP}" target="_blank" rel="noopener">▶ Google Play</a>'
     if APP_STORE_LISTA:
-        a = f'<a class="bt oro" href="{AS}" target="_blank" rel="noopener">App Store</a>'
+        a = f'<a class="bt azul" href="{AS}" target="_blank" rel="noopener">App Store (iOS)</a>'
     else:
         a = '<span class="bt gris"><span lang="es">App Store · Próximamente</span><span lang="en">App Store · Coming soon</span></span>'
     return f'<div class="botones">{gp}{a}</div>'
@@ -47,7 +47,7 @@ def pagina(archivo, cont, activo, tes, ten, desc):
 <meta property="og:image" content="https://neocortexstudio.github.io/assets/img/banner_es.png">
 <link rel="icon" href="{r}assets/img/favicon_estudio.png">
 <link rel="apple-touch-icon" href="{r}assets/img/logo_neocortex_180.png">
-<link rel="stylesheet" href="{r}assets/estilo.css">
+<link rel="stylesheet" href="{r}assets/estilo.css?v=2">
 <script src="{r}assets/idioma.js"></script>
 </head>
 <body>
